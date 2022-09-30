@@ -12,3 +12,15 @@ In this challenge competition, you will try to develop machine learning models t
 For more information on the challenge, contact RSNA Informatics staff at informatics@rsna.org.
 
 A full set of acknowledgments can be found on this page.
+
+## About Dataset
+#### This dataset contains metadata extracted from train image dicom files relevant to the RSNA 2022 Cervical Spine Fracture Detection competition.
+1. meta-train - original metadata extracted (ignore this file)
+2. meta-train-clean - cleaned version of meta-train (easier to use)
+3. meta-segmentations - meta-data for images with segmentations (including correct labels C1-C7 extracted from unique values in segmentations)
+4. meta-train-with-vertebrae - meta-data for all train images (with 88% accurate RF predictions of which vertebrae is in each image)
+5. train-segmented - meta-data for all train images (with 95% accurate EffNetV2 predictions of which vertebrae is in each image from this notebook)
+
+#### The notebooks used to create these files are below:
+1. RSNA Fracture Detection - in-depth EDA
+2. Extracting Vertebrae C1, …, C7
